@@ -1,0 +1,3 @@
+[submodule "BasicDomain"]
+	path = BasicDomain
+	url = https://gitlab.com/BasicLibrary/BasicDomain.git
