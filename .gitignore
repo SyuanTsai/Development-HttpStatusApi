@@ -348,11 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-LobbyAPI/Web.config
-LobbyAPI/Web.Debug.config
-LobbyAPI/Web.Release.config
-LobbyAPI/Web.UAT.config
 *.config
-LobbyAPI/Web.config~develop
-LobbyAPI/Web.config
-LobbyAPIService/App.config
+.idea
