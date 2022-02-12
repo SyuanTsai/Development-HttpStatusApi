@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BasicDomain</name>
+    </assembly>
+    <members>
+        <member name="T:BasicDomain.Model.Result`1">
+            <summary>
+                ##### 共用Model
+                返回結果
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:BasicDomain.Model.Result`1.Success">
+            <summary>
+                本次請求最後是否成功。
+            </summary>
+        </member>
+        <member name="P:BasicDomain.Model.Result`1.Code">
+            <summary>
+                回應代碼
+            </summary>
+            <remarks>
+                這個回應代碼是錯誤的Error Code。
+            </remarks>
+        </member>
+        <member name="P:BasicDomain.Model.Result`1.Message">
+            <summary>
+                對外回應的結果描述(文字版)
+            </summary>
+            <remarks>
+                此內容需要可以讓使用者知道目前回應的狀態結果為何，
+                不能是模稜良可的回應訊息。
+            </remarks>
+            <example>
+                舉例：
+            <code>
+                //  錯誤的訊息內容，無法讓使用者知道在哪邊失敗。
+                string MessageFail = "失敗";
+            
+                //  正確的訊息內容，能夠讓使用者知道目前回應的狀態，也不會將系統內的錯誤訊息給釋放出去。
+                string MessageSuccess = "遠端資料庫查無資料。";
+            </code>
+            </example>
+        </member>
+        <member name="P:BasicDomain.Model.Result`1.DetailMessage">
+            <summary>
+                真實錯誤的詳細資訊，
+                需要在程式中做處理，根據權限決定是否給出錯誤訊息。
+            </summary>
+        </member>
+        <member name="P:BasicDomain.Model.Result`1.Data">
+            <summary>
+                回應的實際資料內容。
+            </summary>
+        </member>
+    </members>
+</doc>

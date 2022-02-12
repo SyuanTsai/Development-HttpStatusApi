@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HttpStatusApi</name>
+    </assembly>
+    <members>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus200">
+            <summary>
+                請求已成功。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus201">
+            <summary>
+                請求已經被實現，而且有一個新的資源已經依據請求的需要而建立，且其URI已經隨Location頭資訊返回。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus202">
+            <summary>
+                伺服器已接受請求，但尚未處理。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus203">
+            <summary>
+                服器是一個轉換代理伺服器（transforming proxy，例如網路加速器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus204">
+            <summary>
+                伺服器成功處理了請求，沒有返回任何內容。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus205">
+            <summary>
+                伺服器成功處理了請求，但沒有返回任何內容。與204回應不同，此回應要求請求者重設文件視圖。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus206">
+            <summary>
+                伺服器已經成功處理了部分GET請求。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus207">
+            <summary>
+                代表之後的訊息體將是一個XML訊息，並且可能依照之前子請求數量的不同，包含一系列獨立的回應代碼。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus208">
+            <summary>
+                DAV繫結的成員已經在（多狀態）回應之前的部分被列舉，且未被再次包含。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus226">
+            <summary>
+                伺服器已經滿足了對資源的請求，對實體請求的一個或多個實體操作的結果表示。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Program.AddSwaggerSetting(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                要啟用的Swagger服務。
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Program.XmlFileSetting(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+                讀取[Assembly]自動產生Xml檔案
+                提供Swagger產生UI介面
+            </summary>
+        </member>
+    </members>
+</doc>
