@@ -16,7 +16,7 @@ public partial class Program
         //  建立Swagger請求回應的服務 - Add Nuget [Swashbuckle.AspNetCore.Filters]
         services.AddSwaggerExamplesFromAssemblyOf(typeof(Program));
 
-        
+
         services.AddSwaggerGen
         (
             uiAnnotation =>
@@ -29,7 +29,7 @@ public partial class Program
     }
 
     #endregion Swagger 的服務配置
-    
+
     #region UI介面的Xml檔案建立
 
     /// <summary>

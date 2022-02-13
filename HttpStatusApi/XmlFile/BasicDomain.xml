@@ -34,7 +34,7 @@
             </remarks>
             <example>
                 舉例：
-            <code>
+                <code>
                 //  錯誤的訊息內容，無法讓使用者知道在哪邊失敗。
                 string MessageFail = "失敗";
             
