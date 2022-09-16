@@ -4,6 +4,11 @@
         <name>HttpStatusApi</name>
     </assembly>
     <members>
+        <member name="T:HttpStatusApi.Controllers.HttpStatus200Controller">
+            <summary>
+                這一類型的狀態碼，代表請求已被接受，需要繼續處理。
+            </summary>
+        </member>
         <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus200">
             <summary>
                 請求已成功。
@@ -64,6 +69,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:HttpStatusApi.Controllers.HttpStatus300Controller">
+            <summary>
+                這類狀態碼代表需要客戶端採取進一步的操作才能完成請求。
+            </summary>
+        </member>
         <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus300">
             <summary>
                 被請求的資源有一系列可供選擇的回饋資訊，每個都有自己特定的位址和瀏覽器驅動的商議資訊。
@@ -115,6 +125,83 @@
         <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus308">
             <summary>
                 求和所有將來的請求應該使用另一個URI重複。 307和308重複302和301的行為，但不允許HTTP方法更改。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HttpStatusApi.Controllers.HttpStatus400Controller">
+            <summary>
+                這類的狀態碼代表了客戶端看起來可能發生了錯誤，妨礙了伺服器的處理。
+            </summary>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus400">
+            <summary>
+                由於明顯的客戶端錯誤（例如，格式錯誤的請求語法，太大的大小，無效的請求訊息或欺騙性路由請求），伺服器不能或不會處理該請求。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus401">
+            <summary>
+                類似於403 Forbidden，401語意即「未認證」，即使用者沒有必要的憑據。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus402">
+            <summary>
+                該狀態碼是為了將來可能的需求而預留的。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus403">
+            <summary>
+                伺服器已經理解請求，但是拒絕執行它。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus404(Test)">
+            <summary>
+                請求失敗，請求所希望得到的資源未被在伺服器上發現，但允許使用者的後續請求。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus405">
+            <summary>
+                請求行中指定的請求方法不能被用於請求相應的資源。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus406">
+            <summary>
+                請求的資源的內容特性無法滿足請求頭中的條件，因而無法生成回應實體，該請求不可接受。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus407">
+            <summary>
+                與401回應類似，只不過客戶端必須在代理伺服器上進行身分驗證。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus408">
+            <summary>
+                請求逾時。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus409">
+            <summary>
+                表示因為請求存在衝突無法處理該請求，例如多個同步更新之間的編輯衝突。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus410">
+            <summary>
+                表示因為請求存在衝突無法處理該請求，例如多個同步更新之間的編輯衝突。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus411">
+            <summary>
+                表示因為請求存在衝突無法處理該請求，例如多個同步更新之間的編輯衝突。
             </summary>
             <returns></returns>
         </member>

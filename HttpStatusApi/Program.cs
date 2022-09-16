@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,3 +28,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public class  Test{
+    [Required(ErrorMessage="TestMessage")]
+    public double Hct { get; set; }
+}
