@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HttpStatusApi</name>
+    </assembly>
+    <members>
+        <member name="T:HttpStatusApi.Controllers.HttpStatus200Controller">
+            <summary>
+                這一類型的狀態碼，代表請求已被接受，需要繼續處理。
+            </summary>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus200">
+            <summary>
+                請求已成功。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus201">
+            <summary>
+                請求已經被實現，而且有一個新的資源已經依據請求的需要而建立，且其URI已經隨Location頭資訊返回。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus202">
+            <summary>
+                伺服器已接受請求，但尚未處理。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus203">
+            <summary>
+                服器是一個轉換代理伺服器（transforming proxy，例如網路加速器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus204">
+            <summary>
+                伺服器成功處理了請求，沒有返回任何內容。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus205">
+            <summary>
+                伺服器成功處理了請求，但沒有返回任何內容。與204回應不同，此回應要求請求者重設文件視圖。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus206">
+            <summary>
+                伺服器已經成功處理了部分GET請求。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus207">
+            <summary>
+                代表之後的訊息體將是一個XML訊息，並且可能依照之前子請求數量的不同，包含一系列獨立的回應代碼。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus208">
+            <summary>
+                DAV繫結的成員已經在（多狀態）回應之前的部分被列舉，且未被再次包含。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus200Controller.ResponseStatus226">
+            <summary>
+                伺服器已經滿足了對資源的請求，對實體請求的一個或多個實體操作的結果表示。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HttpStatusApi.Controllers.HttpStatus300Controller">
+            <summary>
+                這類狀態碼代表需要客戶端採取進一步的操作才能完成請求。
+            </summary>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus300">
+            <summary>
+                被請求的資源有一系列可供選擇的回饋資訊，每個都有自己特定的位址和瀏覽器驅動的商議資訊。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus301">
+            <summary>
+                被請求的資源已永久移動到新位置，並且將來任何對此資源的參照都應該使用本回應返回的若干個URI之一。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus302">
+            <summary>
+                要求客戶端執行臨時重新導向（原始描述短語為「Moved Temporarily」）。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus303">
+            <summary>
+                對應當前請求的回應可以在另一個URI上被找到，當回應於POST（或PUT / DELETE）接收到回應時，客戶端應該假定伺服器已經收到資料，並且應該使用單獨的GET訊息發出重新導向。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus304">
+            <summary>
+                表示資源在由請求頭中的If-Modified-Since或If-None-Match參數指定的這一版本之後，未曾被修改。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus305">
+            <summary>
+                被請求的資源必須通過指定的代理才能被存取。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus306">
+            <summary>
+                在最新版的規範中，306狀態碼已經不再被使用。最初是指「後續請求應使用指定的代理」。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus307">
+            <summary>
+                在這種情況下，請求應該與另一個URI重複，但後續的請求應仍使用原始的URI。 與302相反，當重新發出原始請求時，不允許更改請求方法。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus300Controller.ResponseStatus308">
+            <summary>
+                求和所有將來的請求應該使用另一個URI重複。 307和308重複302和301的行為，但不允許HTTP方法更改。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HttpStatusApi.Controllers.HttpStatus400Controller">
+            <summary>
+                這類的狀態碼代表了客戶端看起來可能發生了錯誤，妨礙了伺服器的處理。
+            </summary>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus400">
+            <summary>
+                由於明顯的客戶端錯誤（例如，格式錯誤的請求語法，太大的大小，無效的請求訊息或欺騙性路由請求），伺服器不能或不會處理該請求。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus401">
+            <summary>
+                類似於403 Forbidden，401語意即「未認證」，即使用者沒有必要的憑據。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus402">
+            <summary>
+                該狀態碼是為了將來可能的需求而預留的。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus403">
+            <summary>
+                伺服器已經理解請求，但是拒絕執行它。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus404(Test)">
+            <summary>
+                請求失敗，請求所希望得到的資源未被在伺服器上發現，但允許使用者的後續請求。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus405">
+            <summary>
+                請求行中指定的請求方法不能被用於請求相應的資源。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus406">
+            <summary>
+                請求的資源的內容特性無法滿足請求頭中的條件，因而無法生成回應實體，該請求不可接受。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus407">
+            <summary>
+                與401回應類似，只不過客戶端必須在代理伺服器上進行身分驗證。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus408">
+            <summary>
+                請求逾時。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus409">
+            <summary>
+                表示因為請求存在衝突無法處理該請求，例如多個同步更新之間的編輯衝突。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus410">
+            <summary>
+                表示因為請求存在衝突無法處理該請求，例如多個同步更新之間的編輯衝突。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HttpStatusApi.Controllers.HttpStatus400Controller.ResponseStatus411">
+            <summary>
+                表示因為請求存在衝突無法處理該請求，例如多個同步更新之間的編輯衝突。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Program.AddSwaggerSetting(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                要啟用的Swagger服務。
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Program.XmlFileSetting(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+                讀取[Assembly]自動產生Xml檔案
+                提供Swagger產生UI介面
+            </summary>
+        </member>
+    </members>
+</doc>
